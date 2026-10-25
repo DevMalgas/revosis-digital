@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Terms and Conditions for website design and digital services provided by Revosis Digital.">
+  <title>Terms &amp; Conditions | Revosis Digital</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fff;
+      --text: #09090b;
+      --muted: #52525b;
+      --line: #e4e4e7;
+      --surface: #f8f9fa;
+      --max: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible {
+      outline: 2px solid #09090b;
+      outline-offset: 4px;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      background: #09090b;
+      color: #fff;
+      font: 800 23px Manrope, sans-serif;
+    }
+
+    .brand-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-name strong {
+      font: 800 15px Manrope, sans-serif;
+      letter-spacing: 0.12em;
+    }
+
+    .brand-name span {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+    }
+
+    .back-link {
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 9px 15px;
+    }
+
+    .back-link:hover {
+      background: var(--surface);
+    }
+
+    main {
+      padding: 76px 0 90px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      font-family: Manrope, sans-serif;
+      line-height: 1.2;
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      margin: 15px 0 16px;
+      font-size: clamp(38px, 6vw, 60px);
+      font-weight: 800;
+    }
+
+    .intro {
+      max-width: 690px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .updated {
+      margin-top: 18px;
+      color: #71717a;
+      font-size: 12px;
+    }
+
+    .terms-content {
+      margin-top: 42px;
+      padding-top: 36px;
+      border-top: 1px solid var(--line);
+    }
+
+    .terms-content section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--muted);
+      margin-bottom: 11px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 8px 0 12px;
+      color: var(--muted);
+    }
+
+    li {
+      margin: 6px 0;
+      padding-left: 3px;
+    }
+
+    .contact-box {
+      margin-top: 38px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+
+    .contact-box h2 {
+      margin-bottom: 8px;
+    }
+
+    .contact-box p {
+      margin-bottom: 6px;
+    }
+
+    .contact-box a {
+      font-weight: 600;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 25px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: #71717a;
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+    }
+
+    .footer-links a {
+      color: #414149;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #09090b;
+    }
+
+    @media (max-width: 600px) {
+      .wrap {
+        width: min(var(--max), calc(100% - 32px));
+      }
+
+      .nav {
+        min-height: 70px;
+      }
+
+      main {
+        padding: 52px 0 65px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <a href="index.html" class="brand" aria-label="Revosis Digital home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-name">
+          <strong>REVOSIS</strong>
+          <span>Digital</span>
+        </span>
+      </a>
+
+      <a class="back-link" href="index.html">← Back to website</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <span class="eyebrow">The important details</span>
+      <h1>Terms &amp; Conditions</h1>
+
+      <p class="intro">
+        These terms explain the general conditions for using Revosis Digital's
+        website and engaging our website design and related digital services.
+        Project-specific quotes or written agreements may add to these terms.
+      </p>
+
+      <p class="updated">Last updated: 25 October 2026</p>
+
+      <div class="terms-content">
+        <section>
+          <h2>1. About these terms</h2>
+          <p>
+            In these terms, “Revosis Digital”, “we”, “us” and “our” refer to
+            Revosis Digital. “Client”, “you” and “your” refer to a person or
+            business enquiring about or purchasing our services.
+          </p>
+          <p>
+            By commissioning work from us, you agree to the terms set out in
+            the applicable quote or written project agreement and these terms,
+            where they apply. If a signed or accepted project agreement conflicts
+            with these general terms, the project agreement will take priority
+            for that project.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Our services</h2>
+          <p>
+            Services may include website design and development, website
+            redesigns, publishing assistance, website updates, maintenance,
+            hosting assistance and other digital services agreed in writing.
+          </p>
+          <p>
+            The exact deliverables, features, timeline and price for a project
+            will be set out in the quote or project agreement. Anything not
+            expressly included may require a separate quote.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Quotes and payment</h2>
+          <ul>
+            <li>Quotes will describe the proposed work, price and any relevant conditions.</li>
+            <li>A quote is accepted when you confirm acceptance in writing or otherwise agree to proceed with the stated work.</li>
+            <li>Any deposit, milestone payment, balance and due date will be communicated before work begins.</li>
+            <li>We may pause work where an agreed payment is overdue, after giving reasonable notice.</li>
+            <li>Additional work outside the agreed scope may incur extra charges. We will seek your approval before proceeding with chargeable extras.</li>
+            <li>Third-party costs, such as domains, hosting, paid themes, plugins, stock assets or subscription services, are separate unless the quote clearly says they are included.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Client responsibilities</h2>
+          <p>
+            You agree to provide the information, content, approvals and access
+            reasonably needed for the project. You are responsible for ensuring
+            that material you supply, including text, logos, photographs and
+            other content, may lawfully be used.
+          </p>
+          <p>
+            Delays in providing content, access or feedback may affect the
+            delivery timeline. We will communicate material delays where
+            reasonably possible.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Design reviews and changes</h2>
+          <p>
+            The quote or project agreement should state what reviews or
+            revisions are included. A revision means a reasonable adjustment
+            to the agreed design or scope; a new feature, substantial redesign
+            or change of direction may be treated as additional work.
+          </p>
+          <p>
+            We will discuss any additional charges and obtain your approval
+            before undertaking out-of-scope work.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Delivery, launch and approvals</h2>
+          <p>
+            We will make reasonable efforts to deliver the agreed work within
+            the estimated timeline. Timelines may change due to delayed
+            feedback, missing content, third-party services or circumstances
+            outside our reasonable control.
+          </p>
+          <p>
+            You are responsible for reviewing the website and reporting
+            material issues before approving launch. Unless otherwise agreed,
+            ongoing updates, maintenance, hosting renewals and support after
+            delivery are not automatically included.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Ownership and portfolio use</h2>
+          <p>
+            Ownership and usage rights for the final website, custom designs
+            and project files will be set out in the relevant quote or written
+            agreement. Where appropriate, transfer of agreed rights may be
+            conditional on full payment.
+          </p>
+          <p>
+            Third-party software, fonts, themes, plugins and other licensed
+            assets remain subject to their own licence terms. We do not
+            transfer rights that we do not own.
+          </p>
+          <p>
+            We will not publicly display confidential client information. If
+            we wish to feature a completed project in our portfolio, we will
+            seek your permission unless a separate written agreement says
+            otherwise.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Hosting, domains and third-party services</h2>
+          <p>
+            Domain registration, hosting, email, payment services, plugins
+            and other third-party products may be governed by separate
+            providers' terms, pricing and renewal policies. We are not
+            responsible for interruptions, changes or failures caused by
+            third-party providers, but will communicate and assist with
+            issues where this is part of our agreed service.
+          </p>
+          <p>
+            Unless expressly included in writing, clients are responsible
+            for third-party subscription fees and renewals.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Website performance and search visibility</h2>
+          <p>
+            We aim to build websites in line with the agreed scope and
+            reasonable industry practices. However, we cannot guarantee
+            specific search engine rankings, visitor numbers, sales, leads,
+            uptime or business results. These can depend on factors outside
+            our control, including search engine changes, competition,
+            hosting and user behaviour.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Cancellations and refunds</h2>
+          <p>
+            If you want to cancel a project, contact us in writing as soon
+            as possible. You may be responsible for the agreed price of work
+            already completed, approved expenses and non-cancellable
+            third-party costs, subject to the project agreement and
+            applicable law.
+          </p>
+          <p>
+            Any refund or amount owing will be assessed according to the work
+            completed, the payment terms agreed and applicable South African
+            law. Nothing in these terms is intended to remove any consumer
+            rights that cannot legally be excluded.
+          </p>
+        </section>
+
+        <section>
+          <h2>11. Privacy and personal information</h2>
+          <p>
+            We use personal information provided through enquiries to respond,
+            discuss projects and provide our services. Please do not submit
+            passwords or unnecessary sensitive information through the
+            website contact form.
+          </p>
+          <p>
+            Where applicable, personal information will be handled in
+            accordance with South African data protection law, including the
+            Protection of Personal Information Act (POPIA). If we introduce
+            additional data uses or services, further privacy information
+            may be provided.
+          </p>
+        </section>
+
+        <section>
+          <h2>12. Liability</h2>
+          <p>
+            To the extent permitted by law, neither party will be liable to
+            the other for indirect or consequential losses arising from a
+            project. We remain responsible for obligations and liabilities
+            that cannot lawfully be excluded or limited.
+          </p>
+          <p>
+            Nothing in these terms excludes liability for fraud, intentional
+            misconduct, or any other liability that cannot be excluded under
+            applicable law.
+          </p>
+        </section>
+
+        <section>
+          <h2>13. Changes to these terms</h2>
+          <p>
+            We may update these website terms from time to time. The version
+            published on this page will show its latest update date. Any
+            material change to an ongoing project will be handled in
+            accordance with the applicable project agreement and the law.
+          </p>
+        </section>
+
+        <section>
+          <h2>14. Governing law</h2>
+          <p>
+            These terms are intended to be governed by the laws of the
+            Republic of South Africa, subject to any mandatory legal
+            protections that apply to a client or transaction.
+          </p>
+        </section>
+
+        <section>
+          <h2>15. Contact us</h2>
+          <p>
+            If you have a question about these terms or a project, contact
+            Revosis Digital using the details below.
+          </p>
+        </section>
+      </div>
+
+      <div class="contact-box">
+        <h2>Revosis Digital</h2>
+        <p>
+          Email:
+          <a href="mailto:revosisdigital@gmail.com">revosisdigital@gmail.com</a>
+        </p>
+        <p>
+          Phone / WhatsApp:
+          <a href="tel:+27658049589">065 804 9589</a>
+        </p>
+        <p>
+          <a href="https://wa.me/27658049589" target="_blank" rel="noopener noreferrer">
+            Message us on WhatsApp ↗
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Revosis Digital. All rights reserved.</span>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="mailto:revosisdigital@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
